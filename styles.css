@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Universal box-sizing for all elements */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Body styles */
+body {
+    display: flex;
+    justify-content: center; /* Centers the calculator horizontally */
+    align-items: center; /* Centers the calculator vertically */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Removes default margin */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+/* Calculator container */
+.calculator {
+    width: 320px; /* Width of the calculator box */
+    padding: 20px; /* Padding inside the calculator */
+    border: 2px solid #333; /* Border around the calculator */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background for the calculator */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Display area */
+.display {
+    width: 100%; /* Full width of the calculator */
+    height: 50px; /* Height of the display */
+    font-size: 24px; /* Font size of the display text */
+    text-align: right; /* Aligns text to the right */
+    padding: 10px; /* Padding inside the display */
+    border: 1px solid #ccc; /* Border for the display */
+    border-radius: 5px; /* Rounded corners for the display */
+    margin-bottom: 20px; /* Space below the display */
+    background-color: #eaeaea; /* Light gray background for the display */
+}
+
+/* Buttons container */
+.buttons {
+    display: grid; /* Use grid layout for buttons */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 10px; /* Space between buttons */
+}
+
+/* General button styles */
+.btn, .operator, .equal, .clear {
+    padding: 20px; /* Padding inside buttons */
+    font-size: 18px; /* Font size of button text */
+    border: 1px solid #ccc; /* Border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #f9f9f9; /* Light background for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    display: flex; /* Use flexbox for button content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 60px; /* Fixed height for all buttons */
+}
+
+/* Number button styles */
+.btn {
+    background-color: #f9f9f9; /* Light background for number buttons */
+}
+
+.btn:hover {
+    background-color: #eaeaea; /* Darker background on hover */
+}
+
+/* Operator button styles */
+.operator {
+    background-color: #ff9500; /* Orange background for operator buttons */
+    color: white; /* White text color for operator buttons */
+}
+
+.operator:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Equal button styles */
+.equal {
+    background-color: #28a745; /* Green background for equal button */
+    color: white; /* White text color for equal button */
+    grid-column: span 2; /* Make the equal button span two columns */
+}
+
+.equal:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Clear button styles */
+.clear {
+    background-color: #dc3545; /* Red background for clear button */
+    color: white; /* White text color for clear button */
+    grid-column: span 2; /* Make the clear button span two columns */
+}
+
+.clear:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
